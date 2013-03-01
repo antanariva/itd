@@ -6,9 +6,13 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" >
 <title>ITD lab. - Просто о сложном. Блог разработчиков сайтов, ракетной техники и врачей иммунологов</title>
 
-<link href='http://fonts.googleapis.com/css?family=Exo:200,800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,900,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Cuprum:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Exo:800' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/google.css" type="text/css"/>
 <link rel="stylesheet" href="css/style.css" type="text/css"/>
-<link href="css/colorbox.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/colorbox.css" type="text/css" />
 <link rel="icon" type="image/png" href="itd.png" />
 </head>
 
@@ -22,22 +26,46 @@
 </div><!-- Конец левой части сайта -->	
 	
 <div id="top"><!-- Верхняя часть сайта -->
-    <header>
+    <div id="header">
 	    <div id="undertitle">Просто о сложном</div>
 		<div id="title"><a href="#">INTELDATA.RU</a>
 		<div id="subtitle">Интеллектуальное общение. Анализ. Критика</div>
 		</div>
-    </header>
+    </div>
 	
-	<div id="search"><!-- Поиск по сайту (хм, как его реализовать в html5? :) ) -->
+	<div id="search"><!-- Поиск по сайту -->
+		<div id="cse" style="width: 100%;">Loading</div>
+		<script src="http://www.google.ru/jsapi" type="text/javascript"></script>
+		<script type="text/javascript"> 
+		  google.load('search', '1', {language : 'ru', style : google.loader.themes.V2_DEFAULT});
+		  google.setOnLoadCallback(function() {
+			var customSearchOptions = {};  var customSearchControl = new google.search.CustomSearchControl(
+			  '015867065178931830870:7lqqbdlzybg', customSearchOptions);
+			customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+			customSearchControl.draw('cse');
+		  }, true);
+		</script>
 	</div>
 	
 	<div id="popular"><!-- Рекламируемых заголовки вверху -->
+	
+	<div id="popular1">
+		<img src="img/itd.png" alt="Иллюстрация" align="left">
+		<div class="cat">IT-сервис</div>
+		<h2>Создание сайтов</h2>
+		<div class="desc">Услуги создания и поддержки сайтов, разработка презентаций...</div>
+	</div>
+	
+	<div id="popular2">
+		<div class="cat">Вопросы медицины</div>
+		<h2>Вакцинация: за и против </h2>
+		<div class="desc">Польза и вред прививок, взгляд иммунолога, юридические аспекты</div>
 	</div>
 	
 	<div id="submenu"><!-- Подменю сайтас сверху -->
 	</div>
 	
+	</div>
 </div><!-- Конец верхней части сайта -->
 
 <div id="container"><!-- блок средней и правой части, с содержимым сайта -->
