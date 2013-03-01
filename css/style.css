@@ -1,9 +1,20 @@
 ﻿body {margin: 0; padding: 0;}
 
-#menubar {width: 198px;height: 100%;background: #333;}
+#menubar {position:absolute; width:198px; height:100%; background:#333;}
 
-#top {height: 106px; background: #fff;border-bottom: 5px solid #333;}
-#header
+#top {position:relative; 
+     left:198px; 
+     height: 106px; 
+     background: #fff;
+	 border-bottom: 5px solid #333;
+	 }
+
+header {position:relative; left:27px; top:18px; max-width: 300px;}
+#undertitle {position:relative; font-family: 'Exo', sans-serif; font-weight: 200; font-size:13px; color:red; margin: 0 0 -6px 0;}
+#title  a {font-family: 'Exo', sans-serif; font-weight: 800; font-size:42px; text-decoration: none; color: #000;}
+#subtitle {font-family: 'Exo', sans-serif; font-weight: 200; font-size:13px; color: #999; margin: -8px 0 0 3px; }
+.itd {color:red;}
+
 
 #search
 #popular
