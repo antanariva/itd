@@ -2,13 +2,28 @@
 html, body {height: 100%;}
 a {text-decoration: none;}
 
-#menubar {position:absolute; width:198px; height:100%; background:#333;}
+#menubar {position:absolute; width:198px; min-height:100%; background:#333;}
+nav {margin: 22px 0 0 22px}
+ol, li {list-style-type: none;}
+ol {padding: 9px 0;}
+li {padding: 4px 0;}
+
+.cat-bar {margin:4px 0 0 0; font-family: 'Cuprum', sans-serif; font-weight: 400; font-size:18px;}
+ a.cat-bar{color:#f63;} 
+ a.cat-bar:hover {color:#f63;} 
+ a.cat-bar:visited {color:#f63;}
+#subcat {font-family: 'Roboto', sans-serif; font-weight: 700; font-size:15px;}
+ #subcat a{color: #fff; } 
+ #subcat a:hover {color: #ccc;} 
+ #subcat a:visited {color: #fff;}
+ 
+.prim {font-family: 'Roboto', sans-serif; font-weight: 400; font-size:12px; margin:5px 0 3px 0; color: #39f;}
 
 #top {position:relative; left:198px; margin-right:198px; height: 106px; background: #fff; border-bottom: 5px solid #333;}
 
-#header {position:relative; left:27px; max-width: 360px; float:left; height:106px;}
-	#undertitle {position:relative; top:18px; font-family: 'Roboto', sans-serif; font-weight: 400; font-size:13px; color:red; margin: 0 0 14px 0;}
-	#title  a {font-family: 'Exo', sans-serif; font-weight: 800; font-size:42px; color: #000;}
+#header {position:relative; left:27px; max-width: 360px; float:left; height:106px;} /* top:22px; если undertitle закоментен */
+	#undertitle {position:relative; top:18px; font-family: 'Roboto', sans-serif; font-weight: 400; font-size:13px; color:#999; margin: 0 0 14px 0;}
+	#title  a {font-family: 'Exo', sans-serif; font-weight: 800; font-size:42px; color: #000; } 
 	#subtitle {font-family: 'Roboto', sans-serif; font-weight: 400; font-size:13px; color: #999; margin: -8px 0 0 0;}
 
 #popular {position:absolute; max-width:700px; height: 90px; top:20px; left: 360px;}
@@ -16,17 +31,20 @@ a {text-decoration: none;}
     #imgpop {border: 1px #333333 solid; margin: -4px 4px 0 0px;}
 	#popular2{position:absolute; width:264px; height: 50px; margin: 0 0 0 344px;}
 
+
+.cat {margin:4px 0 0 0; font-family: 'Cuprum', sans-serif; font-weight: 400; font-size:16px;}
+ a.cat {color: #c9201d;} 
+ a.cat:hover {color: #c9201d;} 
+ a.cat:visited {color: #c9201d;}
+
 h2 {font-family: 'Roboto', sans-serif; font-weight: 700; font-size:20px; margin: 0 0 4px 0;}
-a#poph{color:#000;}
-#cat {margin:4px 0 0 0; font-family: 'Cuprum', sans-serif; font-weight: 400; font-size:16px;}
-#cat a {color: #C9201D; } 
-#cat a:hover {color: #C9201D;} 
-#cat a:visited {color: #C9201D;}
+ a.h2{color:#000;}
+ 
 .desc {font-family: 'Roboto', sans-serif; font-weight: 400; font-size:12px; margin:0; color: #333;}
-	
+
 #search {position:relative; width: 189px; height:12px; float: right;}
 
-#submenu {position:relative; height:16px; text-align: right; padding: 2px 20px 10px 198px; font-family: 'Roboto', sans-serif; font-weight: 700; font-size:12px; color:#333;}
+#submenu {position:relative; height:16px; text-align: right; padding: 2px 20px 10px 198px; font-family: 'Roboto', sans-serif; font-weight: 700; font-size:12px; color:#333; min-width:595px;}
 #submenu a{color: #333;}
 #submenu a:hover {color: #C9201D;}
 #submenu a:visited {color: #333;}
